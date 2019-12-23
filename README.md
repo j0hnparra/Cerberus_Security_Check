@@ -1,2 +1,2 @@
-# Cerberus_Security_Check
+# Cerberus Security Check
 Capstone Project for Arizona State University
