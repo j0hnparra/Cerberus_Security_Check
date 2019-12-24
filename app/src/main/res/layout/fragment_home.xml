@@ -33,15 +33,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo"
-            android:contentDescription="@string/logo" />
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
 
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="218dp"
+            android:layout_height="238dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
