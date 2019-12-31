@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.cerberus.securitycheck.R
-import com.cerberus.securitycheck.ui.notifications.FeedViewModel
 
 class FeedFragment : Fragment() {
 
@@ -22,8 +21,8 @@ class FeedFragment : Fragment() {
     ): View? {
         feedViewModel =
             ViewModelProviders.of(this).get(FeedViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
+        val root = inflater.inflate(R.layout.fragment_feed, container, false)
+        val textView: TextView = root.findViewById(R.id.text_feed)
         feedViewModel.text.observe(this, Observer {
             textView.text = it
         })

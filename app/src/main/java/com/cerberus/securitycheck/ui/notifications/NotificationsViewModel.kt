@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class NotificationsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "*WIP* Subscribe to notifications of any future data leaks."
+        value = "Subscribe to notifications of any future data leaks"
     }
     val text: LiveData<String> = _text
 }
