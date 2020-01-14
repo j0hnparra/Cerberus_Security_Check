@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,10 +42,22 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_about -> true
-            R.id.action_faq -> true
-            R.id.action_feedback -> true
-            R.id.action_privacy -> true
+            R.id.action_about -> {
+                this.startActivity(Intent(this, AboutActivity::class.java))
+                return true
+            }
+            R.id.action_faq -> {
+                this.startActivity(Intent(this, FaqActivity::class.java))
+                return true
+            }
+            R.id.action_feedback -> {
+                this.startActivity(Intent(this, FeedbackActivity::class.java))
+                return true
+            }
+            R.id.action_privacy -> {
+                this.startActivity(Intent(this, PrivacyActivity::class.java))
+                return true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
