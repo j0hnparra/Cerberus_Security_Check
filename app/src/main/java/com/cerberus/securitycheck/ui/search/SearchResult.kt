@@ -10,25 +10,23 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.cerberus.securitycheck.R
 
-class SearchFragment : Fragment() {
+class SearchResult : Fragment() {
 
     private lateinit var searchViewModel: SearchViewModel
 
     override fun onCreateView(
-
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         searchViewModel =
             ViewModelProviders.of(this).get(SearchViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_search, container, false)
-        val textView: TextView = root.findViewById(R.id.edit_search)
+        val root = inflater.inflate(R.layout.search_result, container, false)
+        val textView: TextView = root.findViewById(R.id.pwn_result)
         searchViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root
     }
-
 
 }

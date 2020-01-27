@@ -15,4 +15,8 @@
     <string name="about_body">About us and this application!</string>
 
     <string name="logo">Logo</string>
+
+    <string name="hint_search_string">Enter Credentials</string>
+    <string name="button_search">Search Now</string>
+
 </resources>

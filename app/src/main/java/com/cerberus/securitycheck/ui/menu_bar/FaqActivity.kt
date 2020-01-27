@@ -1,13 +1,13 @@
-package com.cerberus.securitycheck
+package com.cerberus.securitycheck.ui.menu_bar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cerberus.securitycheck.R
 
-class AboutActivity : AppCompatActivity() {
+class FaqActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about
-        )
+        setContentView(R.layout.activity_faq)
     }
 }

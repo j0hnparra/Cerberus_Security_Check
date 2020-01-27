@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cerberus.securitycheck">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrivacyActivity"></activity>
-        <activity android:name=".FeedbackActivity" />
-        <activity android:name=".FaqActivity" />
+        <activity android:name=".ui.feed.FeedActivity"></activity>
+        <activity android:name=".ui.menu_bar.PrivacyActivity" />
+        <activity android:name=".ui.menu_bar.FeedbackActivity" />
+        <activity android:name=".ui.menu_bar.FaqActivity" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".ui.menu_bar.AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -25,6 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.search.SearchFragment" />
+        <activity android:name=".ui.search.SearchResult" />
+
     </application>
 
 </manifest>

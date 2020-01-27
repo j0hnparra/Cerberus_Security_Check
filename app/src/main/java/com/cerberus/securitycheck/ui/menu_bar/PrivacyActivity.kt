@@ -1,12 +1,13 @@
-package com.cerberus.securitycheck
+package com.cerberus.securitycheck.ui.menu_bar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cerberus.securitycheck.R
 
-class FeedbackActivity : AppCompatActivity() {
+class PrivacyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_feedback)
+        setContentView(R.layout.activity_privacy)
     }
 }
