@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                         content += "BreachDate: " + breach.BreachDate + "\n"
                         content += "PwnCount: " + breach.PwnCount + "\n"
                         content += "Description: " + breach.Description + "\n"
-                        content += "LogoPath: " + breach.LogoPath + "\n"
+                        content += "LogoPath: " + breach.LogoPath + "\n\n"
                         textViewResult.append(content)
                     }
                 }
