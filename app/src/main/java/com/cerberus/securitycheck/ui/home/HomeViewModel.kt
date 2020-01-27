@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class HomeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "About us and the application...."
+        value = "All Breaches via HaveIBeenPwned"
     }
     val text: LiveData<String> = _text
 }
