@@ -20,6 +20,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.security.Security
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 .build()
 
             val breachApi: BreachApi = retrofit.create(BreachApi::class.java)
-            val call: Call<List<Breaches>> = breachApi.getBreaches()
+            val call: Call<List<Breaches>> = breachApi.getBreaches("parrachiefs@gmail.com")
 
 
             call.enqueue(object : Callback<List<Breaches>> {
