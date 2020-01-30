@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var textViewResult: TextView
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -107,6 +106,7 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
+
             R.id.action_about -> {
                 this.startActivity(Intent(this, AboutActivity::class.java))
                 return true
@@ -124,6 +124,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             else -> super.onOptionsItemSelected(item)
+
         }
     }
 
