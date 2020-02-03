@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="250dp"
         android:ems="16"
-        android:hint="Enter email address"
+        android:fontFamily="@font/montserrat"
+        android:hint="bob@gmail.com"
         android:inputType="textEmailAddress"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -22,6 +24,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
         android:text="@string/button_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -32,21 +35,31 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@id/edit_search"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView_source"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Breach data provided by Have I Been Pwned at haveibeenpwned.com"
+        android:fontFamily="@font/montserrat"
+        android:text="Breach data provided by HaveIBeenPwned.com"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/search_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Check to see whether your email, username, or password has been compromised in a data breach:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

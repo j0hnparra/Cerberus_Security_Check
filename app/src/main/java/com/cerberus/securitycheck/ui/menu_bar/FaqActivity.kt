@@ -41,6 +41,10 @@ class FaqActivity : AppCompatActivity() {
                 this.startActivity(Intent(this, PrivacyActivity::class.java))
                 return true
             }
+            R.id.action_email_search -> {
+                this.startActivity(Intent(this, EmailExample::class.java))
+                return true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

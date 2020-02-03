@@ -22,4 +22,16 @@
         android:orderInCategory="100"
         android:title="@string/action_privacy"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_email_search"
+        android:orderInCategory="100"
+        android:title="Email/Username Search Example"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_paste_search"
+        android:orderInCategory="100"
+        android:title="Paste Search Example"
+        app:showAsAction="never" />
 </menu>

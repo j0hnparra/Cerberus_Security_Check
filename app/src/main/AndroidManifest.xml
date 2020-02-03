@@ -58,6 +58,27 @@
         <activity android:name=".ui.search.SearchResult" />
         <activity android:name=".ui.feed.FeedActivity"/>
 
+
+        <activity
+            android:name=".ui.menu_bar.EmailExample"
+            android:label="Email/Username Search Example"
+            android:launchMode="singleTop">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".ui.menu_bar.PasteExample"
+            android:label="Paste Search Example"
+            android:launchMode="singleTop">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

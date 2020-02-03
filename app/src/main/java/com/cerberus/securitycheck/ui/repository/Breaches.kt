@@ -1,4 +1,4 @@
-package com.cerberus.securitycheck
+package com.cerberus.securitycheck.ui.repository
 
 data class Breaches (
     val Name: String,

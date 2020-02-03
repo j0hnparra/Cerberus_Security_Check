@@ -9,8 +9,4 @@ import androidx.lifecycle.ViewModel
 
 class FeedViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "NEWS FEED"
-    }
-    val text: LiveData<String> = _text
 }

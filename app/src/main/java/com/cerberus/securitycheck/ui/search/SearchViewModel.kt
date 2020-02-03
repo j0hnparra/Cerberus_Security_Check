@@ -10,9 +10,4 @@ import androidx.lifecycle.ViewModel
 
 class SearchViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "About us and the application...."
-    }
-    val text: LiveData<String> = _text
-
 }

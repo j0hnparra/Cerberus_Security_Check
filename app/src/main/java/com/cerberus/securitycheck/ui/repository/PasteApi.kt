@@ -1,16 +1,16 @@
-package com.cerberus.securitycheck
+package com.cerberus.securitycheck.ui.repository
 
 import retrofit2.Call
 import retrofit2.http.*
 
-interface BreachApi {
+interface PasteApi {
 
     @Headers("user-agent: CerberusSecurityCheck", "hibp-api-key: dc89a9bb9eea467692d2a030107bb16a")
-    @GET("breachedaccount/{account} ?truncateResponse=false")
-    fun getBreaches(
-        @Path("account", encoded = true) pwnAccount: String):
+    @GET("pasteaccount/{account} ")
+    fun getPastes(
+        @Path("account", encoded = true) pasteAccount: String):
 
-    Call<List<Breaches>>
+            Call<List<Pastes>>
 
 }
 
