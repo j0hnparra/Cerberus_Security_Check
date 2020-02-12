@@ -1,7 +1,7 @@
 package com.cerberus.securitycheck.ui.menu_bar
 
-import com.cerberus.securitycheck.ui.repository.BreachApi
-import com.cerberus.securitycheck.ui.repository.Breaches
+import com.cerberus.securitycheck.repository.BreachApi
+import com.cerberus.securitycheck.models.Breaches
 import com.cerberus.securitycheck.R
 import android.os.Bundle
 import android.widget.TextView

@@ -1,5 +1,6 @@
-package com.cerberus.securitycheck.ui.repository
+package com.cerberus.securitycheck.repository
 
+import com.cerberus.securitycheck.models.Pastes
 import retrofit2.Call
 import retrofit2.http.*
 
