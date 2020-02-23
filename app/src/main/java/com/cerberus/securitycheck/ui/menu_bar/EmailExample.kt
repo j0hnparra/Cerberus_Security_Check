@@ -27,9 +27,9 @@ class EmailExample : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val breachApi: BreachApi = retrofit.create(
-            BreachApi::class.java)
-        val call: Call<List<Breaches>> = breachApi.getBreaches("ghost")
+        val breachApi: BreachApi = retrofit.create(BreachApi::class.java)
+
+        val call: Call<List<Breaches>> = breachApi.getBreaches("parrachiefs@gmail.com")
 
         call.enqueue(object : Callback<List<Breaches>> {
             override fun onResponse(
