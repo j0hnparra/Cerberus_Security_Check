@@ -6,6 +6,7 @@ import com.cerberus.securitycheck.R
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.cerberus.securitycheck.ui.search.EXTRA_MESSAGE
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,6 +23,15 @@ class EmailExample : AppCompatActivity() {
 
         textViewResult = findViewById(R.id.text_view_result)
 
+        // Get the Intent that started this activity and extract the string
+        val message = intent.getStringExtra(EXTRA_MESSAGE)
+
+        // Capture the layout's TextView and set the string as its text
+        val textView = findViewById<TextView>(R.id.textView).apply {
+            text = message
+        }
+
+
         val retrofit = Retrofit.Builder()
             .baseUrl("https://haveibeenpwned.com/api/v3/")
             .addConverterFactory(GsonConverterFactory.create())
@@ -29,7 +39,7 @@ class EmailExample : AppCompatActivity() {
 
         val breachApi: BreachApi = retrofit.create(BreachApi::class.java)
 
-        val call: Call<List<Breaches>> = breachApi.getBreaches("parrachiefs@gmail.com")
+        val call: Call<List<Breaches>> = breachApi.getBreaches("$message")
 
         call.enqueue(object : Callback<List<Breaches>> {
             override fun onResponse(
@@ -37,7 +47,8 @@ class EmailExample : AppCompatActivity() {
                 response: Response<List<Breaches>>
             ) {
                 if (!response.isSuccessful) {
-                    textViewResult.text = "Code: " + response.code() + "\nNot found — the account could not be found and has therefore not been pwned"
+                    textViewResult.text =
+                        "Code: " + response.code() + "\nNot found — the account could not be found and has therefore not been pwned"
                     return
                 }
                 val allbreaches: List<Breaches>? = response.body()
