@@ -17,6 +17,7 @@
             android:id="@+id/imageView_search"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
             android:contentDescription="@string/logo"
             app:srcCompat="@drawable/logo" />
 
@@ -26,11 +27,35 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="12dp"
             android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="@string/search_header"
             android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:checked="true"
+                android:text="@string/radioButton_email" />
+
+            <RadioButton
+                android:id="@+id/radioButton_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:checked="false"
+                android:text="@string/radioButton_password" />
+        </RadioGroup>
 
         <EditText
             android:id="@+id/editText_search"
@@ -50,6 +75,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:text="@string/button_search" />
+
     </LinearLayout>
 
     <TextView

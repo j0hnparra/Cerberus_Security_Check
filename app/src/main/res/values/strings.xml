@@ -39,5 +39,9 @@
     //Misc. Strings
     <string name="logo">Logo</string>
     <string name="source_footer">Breach data provided by HaveIBeenPwned.com</string>
+    <string name="radioButton_email">Email/Username</string>
+    <string name="radioButton_password">Password</string>
+    <string name="radioButton_paste">Paste</string>
+    <string name="app_creators">Designed by John Parra &amp; Tyler Brodksy</string>
 
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.cerberus.securitycheck.R
+import com.cerberus.securitycheck.ui.search.EmailResult
 
 class AboutActivity : AppCompatActivity() {
 
@@ -42,7 +43,7 @@ class AboutActivity : AppCompatActivity() {
                 return true
             }
             R.id.action_email_search -> {
-                this.startActivity(Intent(this, EmailExample::class.java))
+                this.startActivity(Intent(this, EmailResult::class.java))
                 return true
             }
             else -> super.onOptionsItemSelected(item)

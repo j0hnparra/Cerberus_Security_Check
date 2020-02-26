@@ -1,4 +1,4 @@
-package com.cerberus.securitycheck.ui.menu_bar
+package com.cerberus.securitycheck.ui.search
 
 import com.cerberus.securitycheck.R
 import android.os.Bundle
@@ -12,13 +12,13 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class PasteExample : AppCompatActivity() {
+class PasteResult : AppCompatActivity() {
 
     private lateinit var textViewResult: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.paste_example)
+        setContentView(R.layout.paste_result)
 
         textViewResult = findViewById(R.id.text_view_result)
 

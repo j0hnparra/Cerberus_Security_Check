@@ -10,10 +10,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.cerberus.securitycheck.ui.menu_bar.*
+import com.cerberus.securitycheck.ui.search.EmailResult
+import com.cerberus.securitycheck.ui.search.PasteResult
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,11 +66,11 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.action_email_search -> {
-                this.startActivity(Intent(this, EmailExample::class.java))
+                this.startActivity(Intent(this, EmailResult::class.java))
                 return true
             }
             R.id.action_paste_search -> {
-                this.startActivity(Intent(this, PasteExample::class.java))
+                this.startActivity(Intent(this, PasteResult::class.java))
                 return true
             }
             else -> super.onOptionsItemSelected(item)

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.cerberus.securitycheck.R
-import com.cerberus.securitycheck.ui.menu_bar.EmailExample
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.android.synthetic.main.fragment_search.view.*
 
@@ -33,7 +32,7 @@ class SearchFragment : Fragment() {
         mView.button_search.setOnClickListener {
             val editText = editText_search
             val message = editText.text.toString()
-            val intent = Intent(activity, EmailExample::class.java).apply {
+            val intent = Intent(activity, EmailResult::class.java).apply {
                 putExtra(EXTRA_MESSAGE, message)
             }
             startActivity(intent)
