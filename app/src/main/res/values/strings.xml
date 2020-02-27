@@ -30,7 +30,20 @@
     <string name="title_activity_faq">FAQs</string>
     <string name="faq_body">Frequently Asked Questions</string>
 
+    <string name="Q1">Q: Do you store our information?\nA: Nope, we don\'t need to. We simply compare your input against the HIBP database.</string>
+    <string name="Q2">Q: What should I do if my password is compromised?\nA:Change your password immediately. Make sure it contains Upper and Lowercase letters, numbers and special characters.
+        Remember to rotate your passwords and to not use similar ones across too many platforms and too often.</string>
+    <string name="Q3">Q: What can I do about being breached or compromised?\nA: The best thing you can do is to research the incident. You want to know how and why your email or other credential
+        was involved in a breach. Additionally, you want to see if there exist any lawsuits; you may eligible for compensation.</string>
+    <string name="Q4">Q: Are there tools I can use to better help me protect my information?\nA: Absolutely! We recommend password vaults or some tool that allows you to generate a unique
+        password for each login like mobilePass or Google Authenticator. The vaults allow you to remember one password to sign into the vault and the vault contains random password for
+        the sites you access regularly. The caveat being, a hacker knowing that single password now has access to your other passwords. Prevent this by using two factor or multi factor
+        authentication.</string>
+
+
     //Feedback Page
+    <string name="example_name">John Doe</string>
+    <string name="F1">Please feel free to reach out via email if you have any questions, comments or concerns.</string>
 
 
     //Privacy Policy page
