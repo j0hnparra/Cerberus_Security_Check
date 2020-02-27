@@ -21,6 +21,18 @@
             android:orientation="vertical" />
     </ScrollView>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:background="#186699"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
     <EditText
         android:id="@+id/editText3"
         android:layout_width="274dp"
