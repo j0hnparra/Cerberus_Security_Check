@@ -28,6 +28,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
         android:background="#186699"
+        android:fontFamily="@font/montserrat"
         android:text="Submit"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +45,7 @@
         android:gravity="start|top"
         android:hint="Comment"
         android:inputType="textMultiLine"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
@@ -57,6 +59,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="@string/example_email"
         android:inputType="textEmailAddress"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -70,6 +73,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="@string/example_name"
         android:inputType="textPersonName"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -80,6 +84,7 @@
         android:layout_marginTop="5dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/F1"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

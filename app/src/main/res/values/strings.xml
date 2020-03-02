@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Cerberus Security Check</string>
+    <string name="app_version">Version: 1.0</string>
     <string name="about_app">This application is a client that queries against HaveIBeenPwned.com\'s database to determine if your email or username has been compromised in a data breach</string>
+    <string name="get_started">Get Started</string>
 
     //Main Navigation
     <string name="title_home">Home</string>
@@ -33,8 +35,8 @@
     <string name="title_activity_faq">FAQs</string>
     <string name="faq_body">Frequently Asked Questions</string>
 
-    <string name="Q1"><b>Q: Do you store our information?</b>\nA:Nope, we don\'t need to. We simply compare your input against the HIBP database.</string>
-    <string name="Q2"><b>Q: What should I do if my password is compromised?</b>\nA:Change your password immediately. Make sure it contains Upper and Lowercase letters, numbers and special characters.
+    <string name="Q1"><b>Q: Do you store our information?</b>\nA: Nope, we don\'t need to. We simply compare your input against the HIBP database.</string>
+    <string name="Q2"><b>Q: What should I do if my password is compromised?</b>\nA: Change your password immediately. Make sure it contains Upper and Lowercase letters, numbers and special characters.
         Remember to rotate your passwords and to not use similar ones across too many platforms and too often.</string>
     <string name="Q3"><b>Q: What can I do about being breached or compromised?</b>\nA: The best thing you can do is to research the incident. You want to know how and why your email or other credential
         was involved in a breach. Additionally, you want to see if there exist any lawsuits; you may eligible for compensation.</string>
@@ -51,9 +53,9 @@
 
     //Privacy Policy page
 
+    <string name="privacy_policy_header">Global Privacy Policy</string>
+    <string name="privacy_policy_date">(Updated as of February, 2020)</string>
     <string name="privacy_policy_body">
-        Welcome to our Privacy Policy
-        \n
         Your privacy is critically important to us.
         \n
         Cerberus Security Check is located at:
@@ -121,10 +123,6 @@
         \n
         - Protection of Certain Personally-Identifying Information
         \n
-
-
-
-
     </string>
 
 
