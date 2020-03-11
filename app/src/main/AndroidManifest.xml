@@ -21,12 +21,13 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".ui.search.SearchFragment" />
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ui.search.SearchFragment"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.search.EmailResult"
-            android:label="Email/Username Search Example"
+            android:label="Search Results"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -34,7 +35,7 @@
         </activity>
         <activity
             android:name=".ui.search.PasteResult"
-            android:label="Paste Search Example"
+            android:label="Paste Search Results"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

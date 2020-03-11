@@ -4,8 +4,11 @@ import com.cerberus.securitycheck.repository.BreachApi
 import com.cerberus.securitycheck.models.Breaches
 import com.cerberus.securitycheck.R
 import android.os.Bundle
+import android.util.Log.d
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.email_result.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,17 +33,14 @@ class EmailResult : AppCompatActivity() {
             text = message
         }
 
-
         val retrofit = Retrofit.Builder()
             .baseUrl("https://haveibeenpwned.com/api/v3/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val breachApi: BreachApi = retrofit.create(BreachApi::class.java)
+        val breachApi = retrofit.create(BreachApi::class.java)
 
-        val call: Call<List<Breaches>> = breachApi.getBreaches("$message")
-
-        call.enqueue(object : Callback<List<Breaches>> {
+        breachApi.getBreaches(message!!).enqueue(object : Callback<List<Breaches>> {
             override fun onResponse(
                 call: Call<List<Breaches>>,
                 response: Response<List<Breaches>>
@@ -50,30 +50,23 @@ class EmailResult : AppCompatActivity() {
                         "Code: " + response.code() + "\nNot found — the account could not be found and has therefore not been pwned"
                     return
                 }
-                val allbreaches: List<Breaches>? = response.body()
-
-                for (breach in allbreaches!!) {
-                    var content = ""
-                    content += "Name: " + breach.Name + "\n"
-                    content += "Title: " + breach.Title + "\n"
-                    content += "Domain: " + breach.Domain + "\n"
-                    content += "BreachDate: " + breach.BreachDate + "\n"
-                    content += "PwnCount: " + breach.PwnCount + "\n"
-                    content += "Description: " + breach.Description + "\n"
-                    content += "LogoPath: " + breach.LogoPath + "\n\n"
-                    textViewResult.append(content)
-                }
+                showData(response.body()!!)
             }
 
-            // Means something went wrong when communicating with server
-            //    or processing response
             override fun onFailure(
                 call: Call<List<Breaches>>,
                 t: Throwable
             ) {
                 textViewResult.text = t.message
             }
-
         })
     }
+
+    private fun showData(breaches: List<Breaches>) {
+        recyclerView_results.apply {
+            layoutManager = LinearLayoutManager(this@EmailResult)
+            adapter = BreachesAdapter(breaches)
+        }
+    }
+
 }

@@ -92,4 +92,5 @@ dependencies {
     implementation 'com.github.kittinunf.fuel:fuel-gson:2.2.1' //Fuel Gson
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'//Gson
+    implementation 'com.ms-square:expandableTextView:0.1.4'
 }

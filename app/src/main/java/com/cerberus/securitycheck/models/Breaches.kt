@@ -1,11 +1,10 @@
 package com.cerberus.securitycheck.models
 
 data class Breaches (
+    val LogoPath: String,
     val Name: String,
-    val Title: String,
     val Domain: String,
-    val BreachDate: String,
     val PwnCount: Int,
-    val Description: String,
-    val LogoPath: String
+    val BreachDate: String,
+    val Description: String
 )
