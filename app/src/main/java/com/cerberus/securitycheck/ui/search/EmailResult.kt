@@ -4,11 +4,10 @@ import com.cerberus.securitycheck.repository.BreachApi
 import com.cerberus.securitycheck.models.Breaches
 import com.cerberus.securitycheck.R
 import android.os.Bundle
-import android.util.Log.d
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.email_result.*
+import kotlinx.android.synthetic.main.search_result.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -21,7 +20,7 @@ class EmailResult : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.email_result)
+        setContentView(R.layout.search_result)
 
         textViewResult = findViewById(R.id.text_view_result)
 

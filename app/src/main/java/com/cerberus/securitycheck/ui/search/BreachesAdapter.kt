@@ -1,23 +1,20 @@
 package com.cerberus.securitycheck.ui.search
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.cerberus.securitycheck.R
 import com.cerberus.securitycheck.models.Breaches
-import com.ms.square.android.expandabletextview.ExpandableTextView
-import kotlinx.android.synthetic.main.breach_row.view.*
+import kotlinx.android.synthetic.main.result_row.view.*
 
 class BreachesAdapter(private val breaches: List<Breaches>) :
     RecyclerView.Adapter<BreachesAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.breach_row, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.result_row, parent, false)
         return ViewHolder(view)
     }
 

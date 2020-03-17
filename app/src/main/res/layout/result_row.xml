@@ -28,7 +28,8 @@
         android:padding="16dp"
         android:src="@drawable/ic_insert_photo_black_24dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/breach_logo" />
 
     <TextView
         android:id="@+id/breachName"
@@ -102,7 +103,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:padding="8dp"
-        android:text="Number of users affected:"
+        android:text="@string/breach_count"
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/breachLogo"
@@ -113,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Date occurred:"
+        android:text="@string/breach_date"
         android:textColor="#000000"
         app:layout_constraintStart_toEndOf="@+id/breachLogo"
         app:layout_constraintTop_toBottomOf="@+id/breachCount" />

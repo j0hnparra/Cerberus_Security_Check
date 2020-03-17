@@ -22,6 +22,9 @@
     <string name="search_header">Check to see whether your email,\n
         username, or password has been compromised in a data breach:</string>
     <string name="search_user">Search results for: </string>
+    <string name="breach_count">Number of users affected: </string>
+    <string name="breach_logo">Image for Breach Source</string>
+    <string name="breach_date">Date occurred: </string>
 
 
     //About Page
