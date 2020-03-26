@@ -10,8 +10,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.cerberus.securitycheck.ui.menu_bar.*
-import com.cerberus.securitycheck.ui.search.EmailResult
-import com.cerberus.securitycheck.ui.search.PasteResult
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {

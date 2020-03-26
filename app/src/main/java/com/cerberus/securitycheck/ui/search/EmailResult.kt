@@ -1,12 +1,15 @@
 package com.cerberus.securitycheck.ui.search
 
+import android.content.Intent
 import com.cerberus.securitycheck.repository.BreachApi
 import com.cerberus.securitycheck.models.Breaches
 import com.cerberus.securitycheck.R
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.cerberus.securitycheck.ui.notifications.NotificationsView
 import kotlinx.android.synthetic.main.search_result.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -28,7 +31,7 @@ class EmailResult : AppCompatActivity() {
         val message = intent.getStringExtra(EXTRA_MESSAGE)
 
         // Capture the layout's TextView and set the string as its text
-        val textView = findViewById<TextView>(R.id.textView).apply {
+        val textView = findViewById<TextView>(R.id.search_result_user).apply {
             text = message
         }
 
@@ -46,7 +49,7 @@ class EmailResult : AppCompatActivity() {
             ) {
                 if (!response.isSuccessful) {
                     textViewResult.text =
-                        "Code: " + response.code() + "\nNot found — the account could not be found and has therefore not been pwned"
+                        getString(R.string.error_code) + response.code() + getString(R.string.error_message)
                     return
                 }
                 showData(response.body()!!)
@@ -59,6 +62,12 @@ class EmailResult : AppCompatActivity() {
                 textViewResult.text = t.message
             }
         })
+
+        val button: Button = this.findViewById(R.id.button_subscribe)
+        button.setOnClickListener {
+            val intent = Intent(this, NotificationsView::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun showData(breaches: List<Breaches>) {
@@ -67,5 +76,4 @@ class EmailResult : AppCompatActivity() {
             adapter = BreachesAdapter(breaches)
         }
     }
-
 }

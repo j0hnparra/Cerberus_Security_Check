@@ -19,12 +19,16 @@
     //Search Page
     <string name="example_email">bob@gmail.com</string>
     <string name="button_search">Search Now</string>
-    <string name="search_header">Check to see whether your email,\n
-        username, or password has been compromised in a data breach:</string>
+    <string name="search_header">Check if a data breach exposed your personal information:</string>
+
+    //Search Results
+    <string name="button_subscribe">Get Alerts About New Leaks</string>
     <string name="search_user">Search results for: </string>
     <string name="breach_count">Number of users affected: </string>
     <string name="breach_logo">Image for Breach Source</string>
     <string name="breach_date">Date occurred: </string>
+    <string name="error_code">Code:\u0020</string>
+    <string name="error_message">\nNot found — the account could not be found and has therefore not been pwned</string>
 
 
     //About Page
@@ -136,5 +140,8 @@
     <string name="radioButton_password">Password</string>
     <string name="radioButton_paste">Paste</string>
     <string name="app_creators">Designed by John Parra &amp; Tyler Brodksy</string>
+    <string name="subscription_title">Get Alerts About New Leaks</string>
+    <string name="contact_us">Contact Us</string>
+
 
 </resources>

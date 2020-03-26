@@ -6,7 +6,7 @@ import retrofit2.http.*
 
 interface BreachApi {
 
-    @Headers("user-agent: CerberusSecurityCheck", "hibp-api-key: dc89a9bb9eea467692d2a030107bb16a")
+    @Headers("user-agent: CerberusSecurityCheck", "hibp-api-key: 6e81e0b041604619be5d7243417c17c4")
     @GET("breachedaccount/{account} ?truncateResponse=false")
     fun getBreaches(
         @Path("account", encoded = true) pwnAccount: String):

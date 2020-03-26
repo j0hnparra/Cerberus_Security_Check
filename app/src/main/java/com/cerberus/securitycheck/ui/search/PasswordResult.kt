@@ -12,13 +12,13 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class PasteResult : AppCompatActivity() {
+class PasswordResult : AppCompatActivity() {
 
     private lateinit var textViewResult: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.paste_result)
+        setContentView(R.layout.password_result)
 
         textViewResult = findViewById(R.id.text_view_result)
 
