@@ -36,7 +36,7 @@
 
         <activity
             android:name=".ui.notifications.NotificationsView"
-            android:label="@string/subscription_title"
+            android:label="@string/title_subscription"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize">
             <meta-data
