@@ -1,6 +1,6 @@
 package com.cerberus.securitycheck.ui.search
 
-import android.content.Context
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,7 +36,7 @@ class BreachesAdapter(private val breaches: List<Breaches>) :
         holder.breachDomain.text = breaches.Domain
         holder.breachCount.text = breaches.PwnCount.toString()
         holder.breachDate.text = breaches.BreachDate
-        holder.breachDescription.text = breaches.Description
+        holder.breachDescription.text = Html.fromHtml(breaches.Description).toString()
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

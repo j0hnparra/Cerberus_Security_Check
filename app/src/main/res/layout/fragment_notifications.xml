@@ -52,7 +52,7 @@
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:fontFamily="@font/montserrat"
                 android:padding="12dp"
@@ -64,11 +64,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/montserrat"
                 android:text="@string/subscription_footer"
-                android:textColor="#000000"
-                android:padding="8dp"/>
+                android:textColor="#000000" />
 
         </LinearLayout>
     </ScrollView>
