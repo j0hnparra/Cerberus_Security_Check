@@ -1,14 +1,17 @@
 package com.cerberus.securitycheck.ui.search
 
 import android.content.Intent
-import com.cerberus.securitycheck.repository.BreachApi
-import com.cerberus.securitycheck.models.Breaches
-import com.cerberus.securitycheck.R
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.cerberus.securitycheck.R
+import com.cerberus.securitycheck.models.Breaches
+import com.cerberus.securitycheck.repository.BreachApi
 import com.cerberus.securitycheck.ui.notifications.NotificationsView
 import kotlinx.android.synthetic.main.search_result.*
 import retrofit2.Call
@@ -49,7 +52,15 @@ class EmailResult : AppCompatActivity() {
             ) {
                 if (!response.isSuccessful) {
                     textViewResult.text =
-                        getString(R.string.error_code) + response.code() + getString(R.string.error_message)
+                        "Good news - no leaks have been found for this account!"
+                    val constraintLayout = findViewById<ConstraintLayout>(R.id.container)
+                    val imageView = ImageView(this@EmailResult)
+                    imageView.setImageResource(R.drawable.ic_check_circle_24dp)
+                    constraintLayout.addView(imageView)
+                    imageView.layoutParams = ConstraintLayout.LayoutParams(
+                        ConstraintLayout.LayoutParams.MATCH_PARENT,
+                        ConstraintLayout.LayoutParams.WRAP_CONTENT
+                    )
                     return
                 }
                 showData(response.body()!!)
