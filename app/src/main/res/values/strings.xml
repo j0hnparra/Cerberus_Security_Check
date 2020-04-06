@@ -25,7 +25,7 @@
     //Search Results
     <string name="button_subscribe">Get Notified About New Leaks</string>
     <string name="search_user">Search results for: </string>
-    <string name="breach_count">Number of users affected: </string>
+    <string name="breach_count">Number of accounts affected: </string>
     <string name="breach_logo">Image for Breach Source</string>
     <string name="breach_date">Date occurred: </string>
     <string name="error_code">Code:\u0020</string>
