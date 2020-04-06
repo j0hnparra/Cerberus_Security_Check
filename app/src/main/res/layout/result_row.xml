@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:padding="8dp"
+            android:textStyle="bold"
             android:textColor="#000000"
             android:textSize="18sp"
             card_view:layout_constraintBottom_toTopOf="@+id/breachDomain"
@@ -97,6 +98,7 @@
             android:text="@string/breach_count"
             android:textColor="#000000"
             android:textSize="14sp"
+            android:textStyle="bold"
             card_view:layout_constraintStart_toEndOf="@+id/breachLogo"
             card_view:layout_constraintTop_toBottomOf="@+id/breachDomain" />
 
@@ -107,6 +109,8 @@
             android:padding="8dp"
             android:text="@string/breach_date"
             android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
             card_view:layout_constraintStart_toEndOf="@+id/breachLogo"
             card_view:layout_constraintTop_toBottomOf="@+id/breachCount" />
     </androidx.constraintlayout.widget.ConstraintLayout>

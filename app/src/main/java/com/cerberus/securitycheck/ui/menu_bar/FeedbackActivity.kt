@@ -5,14 +5,27 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import com.cerberus.securitycheck.R
 import com.cerberus.securitycheck.ui.search.EmailResult
 
 class FeedbackActivity : AppCompatActivity() {
 
+    private lateinit var webView: WebView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feedback)
+        webView = findViewById(R.id.webview)
+        webView.settings.javaScriptEnabled = true
+        webView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                view?.loadUrl(url)
+                return true
+            }
+        }
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSds4rjjBfyRkgtGxVZARmKmsdY6UuE-S-FU25dDW2XNu_6l7w/viewform")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
