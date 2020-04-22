@@ -50,6 +50,18 @@
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
+            <Button
+                android:id="@+id/faq_button2"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:padding="12dp"
+                android:shadowColor="#FFFFFF"
+                android:text="@string/get_started"
+                android:textColor="#FFFFFF" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

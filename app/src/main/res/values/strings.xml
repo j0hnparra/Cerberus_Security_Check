@@ -41,19 +41,19 @@
     <string name="title_activity_about">About</string>
     <string name="about_body">Cerberus Security Check allows you to check your credentials such as an email or password against a collection of breached or compromised records. This means
         that anyone can find out whether their email or password has been involved in breach or incident where someone other than yourself could possibly know your email and password.</string>
-    <string name="bio_tyler">An Arizona State University student pursuing a Bachelors of Science degree with a focus in Information technology.</string>
-    <string name="bio_john">An Arizona State University student pursuing a Bachelors of Science degree with a focus in Information technology.</string>
+    <string name="bio_tyler">An Arizona State University student pursuing a Bachelors of Science degree with a focus in Information Technology. \n\nTyler was responsible for documentation, application design, and creating the final document and poster. He assisted in development of GUI elements and application navigation.</string>
+    <string name="bio_john">An Arizona State University student pursuing a Bachelors of Science degree with a focus in Information Technology. \n\nJohn created the code for the search and subscription functions, as well as application navigation, and GUI elements. He assisted in documentation, and creating the final document and poster.</string>
 
     //FAQs Page
     <string name="title_activity_faq">FAQs</string>
     <string name="faq_body">Frequently Asked Questions</string>
 
-    <string name="Q1"><b>Q: Do you store our information?</b>\nA: Nope, we don\'t need to. We simply compare your input against the HIBP database.</string>
-    <string name="Q2"><b>Q: What should I do if my password is compromised?</b>\nA: Change your password immediately. Make sure it contains Upper and Lowercase letters, numbers and special characters.
+    <string name="Q1"><b>Q: Do you store our information?</b>\n\nA: Nope, we don\'t need to. We simply compare your input against the HIBP database.</string>
+    <string name="Q2"><b>Q: What should I do if my password is compromised?</b>\n\nA: Change your password immediately. Make sure it contains Upper and Lowercase letters, numbers and special characters.
         Remember to rotate your passwords and to not use similar ones across too many platforms and too often.</string>
-    <string name="Q3"><b>Q: What can I do about being breached or compromised?</b>\nA: The best thing you can do is to research the incident. You want to know how and why your email or other credential
+    <string name="Q3"><b>Q: What can I do about being breached or compromised?</b>\n\nA: The best thing you can do is to research the incident. You want to know how and why your email or other credential
         was involved in a breach. Additionally, you want to see if there exist any lawsuits; you may eligible for compensation.</string>
-    <string name="Q4"><b>Q: Are there tools I can use to better help me protect my information?</b>\nA: Absolutely! We recommend password vaults or some tool that allows you to generate a unique
+    <string name="Q4"><b>Q: Are there tools I can use to better help me protect my information?</b>\n\nA: Absolutely! We recommend password vaults or some tool that allows you to generate a unique
         password for each login like mobilePass or Google Authenticator. The vaults allow you to remember one password to sign into the vault and the vault contains random password for
         the sites you access regularly. The caveat being, a hacker knowing that single password now has access to your other passwords. Prevent this by using two factor or multi factor
         authentication.</string>
@@ -66,9 +66,10 @@
 
     //Privacy Policy page
     <string name="privacy_policy_header">Global Privacy Policy</string>
-    <string name="privacy_policy_date">(Updated as of February, 2020)</string>
+    <string name="privacy_policy_date">(Updated as of April, 2020)</string>
     <string name="privacy_policy_body">
         Your privacy is critically important to us.
+        \n
         \n
         Cerberus Security Check is located at:
         \n
@@ -82,58 +83,59 @@
         \n
         Email: CerberusSecurityCheck@gmail.com
         \n
-        It is Cerberus Security Check\'s policy to respect your privacy regarding any information we may collect while operating our website.
+        \nIt is Cerberus Security Check\'s policy to respect your privacy regarding any information we may collect while operating our website.
         This Privacy Policy applies to CerberusSecurityCheck@gmail.com (hereinafter, "us", "we", or "css.com"). We respect your privacy and are committed to protecting personally
         identifiable information you may provide us through the Website. We have adopted this privacy policy ("Privacy Policy") to explain what information may be collected on our Website,
         how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the
         Website and does not apply to our collection of information from other sources. This Privacy Policy, together with the Terms and conditions posted on our Application, set forth the
         general rules and policies governing your use of our Website. Depending on your activities when visiting our Website, you may be required to agree to additional terms and conditions.
         \n
-        - Website Visitors
-         \n
-        Like most website operators, Cerberus Security Check collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the
+        \n
+        <b>Website Visitors</b>
+         \nLike most website operators, Cerberus Security Check collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the
         browser type, language preference, referring site, and the date and time of each visitor request. Cerberus Security Check\'s purpose in collecting non-personally identifying
         information is to better understand how Cerberus Security Check\'s visitors use its website. From time to time, Cerberus Security Check may release non-personally-identifying
         information in the aggregate, e.g., by publishing a report on trends in the usage of its website.
         \n
-        Cerberus Security Check also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on
+        \nCerberus Security Check also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on
         CerberusSecurityCheck@gmail.com blog posts. Cerberus Security Check only discloses logged in user and commenter IP addresses under the same circumstances that it uses and
         discloses personally-identifying information as described below.
         \n
-        - Gathering of Personally-Identifying
         \n
-        Certain visitors to Cerberus Security Check\'s websites choose to interact with Cerberus Security Check in ways that require Cerberus Security Check to gather
+        <b>Gathering of Personally-Identifying</b>
+        \nCertain visitors to Cerberus Security Check\'s websites choose to interact with Cerberus Security Check in ways that require Cerberus Security Check to gather
         personally-identifying information. The amount and type of information that Cerberus Security Check gathers depends on the nature of the interaction. For example,
         we ask visitors who sign up for a blog at CerberusSecurityCheck@gmail.com to provide a username and email address.
         \n
-        - Security
         \n
-        The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure.
+        <b>Security</b>
+        \nThe security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure.
         While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.
         \n
-        - Advertisements
         \n
-        Ads appearing on our website may be delivered to users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each
+        <b>Advertisements</b>
+        \nAds appearing on our website may be delivered to users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each
         time they send you an online advertisement to compile information about you or others who use your computer. This information allows ad networks to, among other things,
         deliver targeted advertisements that they believe will be of most interest to you. This Privacy Policy covers the use of cookies by Cerberus Security Check and does not cover
         the use of cookies by any advertisers.
         \n
-        - Links To External Sites
         \n
-        Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party\'s site.
+        <b>Links To External Sites</b>
+        \nOur Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party\'s site.
         We strongly advise you to review the Privacy Policy and terms and conditions of every site you visit.
         We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites, products or services.
         \n
-        - CerberusSecurityCheck uses Google AdWords for marketing
         \n
-        CerberusSecurityCheck@gmail.com uses the marketing services to advertise on third party websites (including Google) to previous visitors to our site. It could mean that
+        <b>Cerberus Security Check uses Google AdWords for marketing</b>
+        \nCerberusSecurityCheck@gmail.com uses the marketing services to advertise on third party websites (including Google) to previous visitors to our site. It could mean that
         we advertise to previous visitors who haven\'t completed a task on our site, for example using the contact form to make an enquiry. This could be in the form of an
         advertisement on the Google search results page, or a site in the Google Display Network. Third-party vendors, including Google, use cookies to serve ads based on someone\'s
         past visits. Of course, any data collected will be used in accordance with our own privacy policy and Google\'s privacy policy.
         You can set preferences for how Google advertises to you using the Google Ad Preferences page, and if you want to you can opt out of interest-based advertising entirely
         by cookie settings or permanently using a browser plugin.
         \n
-        - Protection of Certain Personally-Identifying Information
+        \n
+        <b>Protection of Certain Personally-Identifying Information</b>
         \n
     </string>
 
