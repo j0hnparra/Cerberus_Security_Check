@@ -10,14 +10,14 @@ import androidx.lifecycle.ViewModelProvider
 import com.cerberus.securitycheck.R
 import com.cerberus.securitycheck.ui.menu_bar.FaqActivity
 import com.cerberus.securitycheck.ui.menu_bar.FeedbackActivity
-import com.cerberus.securitycheck.ui.notifications.NotificationsView
+import com.cerberus.securitycheck.ui.search.SearchFragment
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.fragment_notifications.view.*
+
 
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
-    lateinit var mView: View
+    private lateinit var mView: View
 
 
     override fun onCreateView(
@@ -30,6 +30,11 @@ class HomeFragment : Fragment() {
 
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
+
+        // Feature WIP, users can access search function from navigation bar.
+        mView.get_started_button.setOnClickListener {
+        }
+        // Feature WIP, users can access search function from navigation bar.
 
         mView.faq_button.setOnClickListener {
             val intent = Intent(activity, FaqActivity::class.java)
