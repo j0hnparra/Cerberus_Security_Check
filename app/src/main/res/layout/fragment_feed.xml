@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,18 +22,19 @@
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="400dp"
+                android:layout_width="match_parent"
                 android:layout_height="265dp"
                 android:layout_marginTop="8dp"
-                app:srcCompat="@android:drawable/sym_def_app_icon" />
+                android:padding="6dp"
+                app:srcCompat="@drawable/article_one" />
 
             <TextView
                 android:id="@+id/article_title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Lorem ipsum dolor sit amet"
+                android:padding="4dp"
+                android:text="Equifax breach was the work of Chinese state hackers, DOJ says"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -42,23 +44,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat"
+                android:padding="2dp"
                 android:text="Ars Technica / 1d"
                 android:textColor="#000000" />
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="400dp"
+                android:layout_width="match_parent"
                 android:layout_height="265dp"
                 android:layout_marginTop="20dp"
-                app:srcCompat="@android:drawable/sym_def_app_icon" />
+                android:padding="6dp"
+                app:srcCompat="@drawable/article_two" />
 
             <TextView
                 android:id="@+id/article_title2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:fontFamily="@font/montserrat"
-                android:text="Cras et tristique nulla in elementum"
+                android:padding="4dp"
+                android:text="Password data for ~2.2 million users of currency and gaming sites dumped online"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -68,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/montserrat"
+                android:padding="2dp"
                 android:text="Ars Technica / 2d"
                 android:textColor="#000000" />
         </LinearLayout>
